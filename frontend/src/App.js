@@ -13,7 +13,7 @@ function App() {
       </style>
       <Router>
         <Routes>
-          <Route path='/quote/:id' element={<Template/>}/>
+          <Route path='/:id' element={<Template/>}/>
           <Route path='/' element={<Home/>}/>
         </Routes>
       </Router>

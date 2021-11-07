@@ -30,11 +30,11 @@ function Home() {
                             return name
                         }
                     }).map((name, index) => {
-                        let address='./quote/' + addyListedCorps[index];
+                        let address='./' + addyListedCorps[index];
                         return (
                             <div key={index}>
                                 <Link to={address} style={{ textDecoration: 'none', color: 'black' }}>
-                                    <h3 className='home_corp'>{name}</h3>
+                                    <h3 className='home_corp'>{name}{index}</h3>
                                 </Link>
                             </div>
                         )
